@@ -15,7 +15,8 @@ import org.mockito.ArgumentMatchers;
 import org.mockito.BDDMockito;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
-import org.mockito.junit.MockitoJUnitRunner;
+import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.test.context.junit4.SpringRunner;
 
 import tn.esprit.rh.achat.entities.Produit;
 import tn.esprit.rh.achat.entities.Stock;
@@ -24,7 +25,8 @@ import tn.esprit.rh.achat.repositories.StockRepository;
 import tn.esprit.rh.achat.services.ProduitServiceImpl;
 import tn.esprit.rh.achat.services.StockServiceImpl;
 
-@RunWith(MockitoJUnitRunner.Silent.class)
+@RunWith(SpringRunner.class)
+@SpringBootTest
 public class ProduitTests {
 
 	@Mock
