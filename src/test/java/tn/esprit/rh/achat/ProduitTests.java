@@ -29,11 +29,8 @@ import tn.esprit.rh.achat.services.StockServiceImpl;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
-public class ProduitTests extends TestCase{
-	
-	public static junit.framework.Test suite() {
-        return new JUnit4TestAdapter(ProduitTests.class);
-    }
+public class ProduitTests{
+
 
 	@Mock
 	private ProduitRepository produitRepository;
