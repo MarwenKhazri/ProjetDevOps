@@ -18,6 +18,8 @@ import org.mockito.Mock;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 
+import junit.framework.JUnit4TestAdapter;
+import junit.framework.TestCase;
 import tn.esprit.rh.achat.entities.Produit;
 import tn.esprit.rh.achat.entities.Stock;
 import tn.esprit.rh.achat.repositories.ProduitRepository;
@@ -27,7 +29,11 @@ import tn.esprit.rh.achat.services.StockServiceImpl;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
-public class ProduitTests {
+public class ProduitTests extends TestCase{
+	
+	public static junit.framework.Test suite() {
+        return new JUnit4TestAdapter(ProduitTests.class);
+    }
 
 	@Mock
 	private ProduitRepository produitRepository;
