@@ -18,8 +18,8 @@ import org.mockito.Mock;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 
-import junit.framework.JUnit4TestAdapter;
-import junit.framework.TestCase;
+//import junit.framework.JUnit4TestAdapter;
+//import junit.framework.TestCase;
 import tn.esprit.rh.achat.entities.Produit;
 import tn.esprit.rh.achat.entities.Stock;
 import tn.esprit.rh.achat.repositories.ProduitRepository;
@@ -82,7 +82,7 @@ public class ProduitTests{
 		p1.setDateCreation(new Date());
 		p1.setDateDerniereModification(new Date());
 		
-		List<Produit> listProds = new ArrayList();
+		List<Produit> listProds = new ArrayList<Produit>();
 		listProds.add(p1);
 		listProds.add(p2);
 		
