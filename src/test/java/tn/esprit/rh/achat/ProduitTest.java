@@ -27,7 +27,7 @@ import tn.esprit.rh.achat.services.StockServiceImpl;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
-public class ProduitTests{
+public class ProduitTest{
 	
 
 	@Mock
