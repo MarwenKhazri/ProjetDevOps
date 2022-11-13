@@ -1,0 +1,20 @@
+version: '2'
+
+services:
+  mariadb:
+    container_name: maria
+    image: mariadb
+    restart: unless-stopped
+    environment:
+      MY_SQL_PASSWORD: root
+    volumes:
+      - /home/mariadb/data:/var/lib/mariadb
+
+  springboot:
+     image: projetdevopsimage
+     container_name: devopsprojectfinal
+     restart: on-failure
+     ports:
+      - 9090:9090
+     depends_on:
+      - mariadb
