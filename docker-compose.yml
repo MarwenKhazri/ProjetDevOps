@@ -11,7 +11,7 @@ services:
       - /home/mariadb/data:/var/lib/mariadb
 
   springboot:
-     image: projetdevopsimage
+     image: marwenkhazri/projetdevopsimage
      container_name: devopsprojectfinal
      restart: on-failure
      ports:
