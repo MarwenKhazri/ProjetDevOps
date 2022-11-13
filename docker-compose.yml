@@ -1,14 +1,14 @@
 version: '2'
 
 services:
-  mariadb:
-    container_name: maria
-    image: mariadb
+  mysqldb:
+    container_name: mysqldb
+    image: mysql
     restart: unless-stopped
     environment:
       MY_SQL_PASSWORD: root
     volumes:
-      - /home/mariadb/data:/var/lib/mariadb
+      - /home/mysql/data:/var/lib/mysql
 
   springboot:
      image: marwenkhazri/projetdevopsimage
